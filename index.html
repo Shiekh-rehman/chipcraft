@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CHIP CRAFT</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background-color: #ffffff;
+      color: #001f3f;
+    }
+    .carousel-caption {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 1.5rem;
+  border-radius: 15px;
+  backdrop-filter: blur(4px);
+}
+
+.carousel-whatsapp-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: #25D366;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.carousel-whatsapp-btn i {
+  margin-right: 8px;
+}
+
+.carousel-whatsapp-btn:hover {
+  background-color: #1ebe5d;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+    header, footer {
+      background-color: #001f3f;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      background-color: #001f3f;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #25D366;
+    }
+    .hero {
+      padding: 100px 20px;
+      text-align: center;
+      background-color: #0074cc;
+      color: white;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+    }
+    .carousel-caption {
+      background: rgba(0,0,0,0.5);
+      padding: 1rem;
+      border-radius: 10px;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+    .card {
+      background-color: #f0f8ff;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+    }
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: contain;
+    }
+    .card .btn {
+      background-color: #001f3f;
+      color: white;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 5px;
+      margin-top: 0.5rem;
+      display: inline-block;
+    }
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .whatsapp-btn i {
+      margin-right: 8px;
+    }
+    section {
+      padding: 2rem;
+      text-align: center;
+    }
+    footer .social-icons a {
+      margin: 0 0.5rem;
+      color: white;
+      text-decoration: none;
+    }
+    @media(max-width: 600px) {
+      .hero h2 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CHIP CRAFT</h1>
+    <p>"Bringing Technology to Your Doorstep"</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  
+
+  <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active position-relative">
+        <img src="processor.webp" class="d-block w-100" alt="Slide 1">
+        <div class="carousel-caption d-md-block">
+          <h5>Top Tech</h5>
+          <p>Explore our best electronics.</p>
+          <a href="https://wa.me/923709703473" class="carousel-whatsapp-btn">
+            <i class="fab fa-whatsapp"></i> Chat Now
+          </a>
+        </div>
+      </div>
+      <div class="carousel-item position-relative">
+        <img src="carasel.webp" class="d-block w-100" alt="Slide 2">
+        <div class="carousel-caption d-md-block">
+          <h5>Smart Choices</h5>
+          <p>Technology that fits your life.</p>
+          <a href="https://wa.me/923709703473" class="carousel-whatsapp-btn">
+            <i class="fab fa-whatsapp"></i> Chat Now
+          </a>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  
+
+
+  <section class="cards">
+    <!-- Example Product Card -->
+    <div class="card" data-aos="zoom-in">
+      <img src="lg.webp" alt="LCD" />
+      <h3>LCD Screen</h3>
+      <p>HD 24-inch LCD screen for all your needs.</p>
+      <p class="price">Rs. 12,500</p>
+      <a href="https://wa.me/923110150395" class="btn"><i class="fab fa-whatsapp"></i> buy now</a>
+    </div><div class="card" data-aos="zoom-in">
+      <img src="lg.webp" alt="LCD" />
+      <h3>LCD Screen</h3>
+      <p>HD 24-inch LCD screen for all your needs.</p>
+      <p class="price">Rs. 12,500</p>
+      <a href="https://wa.me/923110150395" class="btn"><i class="fab fa-whatsapp"></i> buy now</a>
+    </div><div class="card" data-aos="zoom-in">
+      <img src="lg.webp" alt="LCD" />
+      <h3>LCD Screen</h3>
+      <p>HD 24-inch LCD screen for all your needs.</p>
+      <p class="price">Rs. 12,500</p>
+      <a href="https://wa.me/923110150395" class="btn"><i class="fab fa-whatsapp"></i> buy now</a>
+    </div><div class="card" data-aos="zoom-in">
+      <img src="lg.webp" alt="LCD" />
+      <h3>LCD Screen</h3>
+      <p>HD 24-inch LCD screen for all your needs.</p>
+      <p class="price">Rs. 12,500</p>
+      <a href="https://wa.me/923110150395" class="btn"><i class="fab fa-whatsapp"></i> buy now</a>
+    </div>
+    <!-- Add more cards here with similar structure -->
+  </section>
+
+  <section class="about" id="about">
+    <h2 data-aos="fade-right">About Us</h2>
+    <p>Owner: CHIP CRAFT</p>
+    <p>CHIP CRAFT is your trusted destination for high-quality electronic components and gadgets. We specialize in providing affordable, reliable, and cutting-edge tech solutions for students, hobbyists, and professionals. Whether you're building a custom PC or upgrading your workspace, we offer everything you need to power your innovation.</p>
+  </section>
+
+  <section class="reviews">
+    <h2 data-aos="flip-up">Client Reviews</h2>
+    <p>⭐⭐⭐⭐⭐ - "Excellent service and great products!"</p>
+    <p>⭐⭐⭐⭐ - "Affordable prices and fast delivery."</p>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2 data-aos="fade-up">Contacts us</h2>
+    <p>WhatsApp: <a href="https://wa.me/03215242091"><i class="fab fa-whatsapp"></i> 03215242091</a></p>
+    <p>Email: info@hamzakhan8676876@gmail.com</p>
+  </section>
+
+  <a href="https://wa.me/03215242091" class="whatsapp-btn">
+    <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+  </a>
+
+  <footer>
+    <p>&copy; 2025 CHIP CRAFT. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000 });
+  </script>
+</body>
+</html>
